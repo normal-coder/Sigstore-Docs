@@ -39,7 +39,6 @@ jobs:
           fetch-depth: 0
 
       - uses: DavidAnson/markdownlint-cli2-action@v11
-        if: steps.changed-files.outputs.any_changed == 'true'
         with:
           config: '.markdownlint-cli2.jsonc'
           globs: "content/**/*.md"
